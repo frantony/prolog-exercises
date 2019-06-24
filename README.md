@@ -4,10 +4,8 @@ prolog-exercises
 ```bratko_1.pl``` contains some exercises from [1].
 Running queries:
 
-    $ swipl -s bratko_1.pl -g "happy(_)"
-    $ swipl -s bratko_1.pl -g "hastwochildren(_)"
-    $ swipl -s bratko_1.pl -g "grandchild(_, _)"
-    $ swipl -s bratko_1.pl -g "aunt(_, _)"
+    $ pip3 install pyswip
+    $ python3 bratko_1.py
 
 
 [1] Ivan Bratko. Prolog Programming for Artificial Intelligence, 1986

@@ -64,13 +64,11 @@ sister(X, Y) :-
 %      (introduce new relation hastwochildren).
 %
 happy(X) :-
-	parent(X, _),
-	write(X), write(' is happy'), nl, false.
+	parent(X, _).
 
 hastwochildren(X) :-
 	parent(X, Y),
-	sister(_, Y),
-	write(X), write(' has two children'), nl, false.
+	sister(_, Y).
 
 %
 % ex. 1.4, page 14
@@ -81,8 +79,7 @@ hastwochildren(X) :-
 %
 grandchild(X, Y) :-
 	parent(Y, A),
-	parent(A, X),
-	write(X), write(' is a grandchild for '), write(Y), nl, false.
+	parent(A, X).
 
 %
 % ex. 1.5, page 14
@@ -93,5 +90,4 @@ grandchild(X, Y) :-
 %
 aunt(X, Y) :-
 	sister(X, A),
-	parent(A, Y),
-	write(X), write(' is an aunt for '), write(Y), nl, false.
+	parent(A, Y).
